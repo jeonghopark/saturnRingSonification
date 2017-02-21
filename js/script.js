@@ -59,7 +59,7 @@ function init() {
     var context = document.getElementById('canvas').getContext("2d");
 
     var img = new Image();
-    img.src = "images/PIA08361_edit_alpha.png";
+    img.src = "images/PIA08361_edit_alpha_s.png";
     img.onload = function() {
         var _width = 800;
         var _height = 800;
@@ -71,7 +71,7 @@ function init() {
 
 
     var loader = new THREE.TextureLoader();
-    loader.load('images/PIA08361_edit_alpha.png', function(texture) {
+    loader.load('images/PIA08361_edit_alpha_s.png', function(texture) {
         var geometry = new THREE.PlaneGeometry(800, 800, 1, 1);
         texture.minFilter = THREE.LinearFilter;
         var material = new THREE.MeshPhongMaterial({

@@ -2,58 +2,58 @@
 <html>
 
 <head>
-	<title>Saturn Ring Color Pixel Sonification</title>
+    <title>Saturn Ring Color Pixel Sonification</title>
 
-	<script src="js/three.js"></script>
-	<script src="js/libs/stats.min.js"></script>
-	<script src="js/libs/TrackballControls.js"></script>
-	<script src="js/libs/dat.gui.min.js"></script>
-	<script src="js/libs/Detector.js"></script>
-	<script src="js/granularSynth.js"></script>
-	<!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <script src="js/three.js"></script>
+    <script src="js/libs/stats.min.js"></script>
+    <script src="js/libs/TrackballControls.js"></script>
+    <script src="js/libs/dat.gui.min.js"></script>
+    <script src="js/libs/Detector.js"></script>
+    <script src="js/granularSynth.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
 
-	<style>
-		body {
-			background-color: #000000;
+    <style>
+        body {
+            background-color: #000000;
 
-			/* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
-			background-image: -webkit-gradient(linear, bottom, top, from(#000000), to(#000000));
+            /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+            background-image: -webkit-gradient(linear, bottom, top, from(#000000), to(#000000));
 
-			/* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-			background-image: -webkit-linear-gradient(top, #000000, #000000);
+            /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+            background-image: -webkit-linear-gradient(top, #000000, #000000);
 
-			/* Firefox 3.6 - 15 */
-			background-image: -moz-linear-gradient(top, #000000, #000000);
+            /* Firefox 3.6 - 15 */
+            background-image: -moz-linear-gradient(top, #000000, #000000);
 
-			/* Opera 11.1 - 12 */
-			background-image: -o-linear-gradient(top, #000000, #000000);
+            /* Opera 11.1 - 12 */
+            background-image: -o-linear-gradient(top, #000000, #000000);
 
-			/* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-			background-image: linear-gradient(to top, #000000, #000000);
-			margin: 0px;
-			overflow: hidden;
-		}
+            /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+            background-image: linear-gradient(to top, #000000, #000000);
+            margin: 0px;
+            overflow: hidden;
+        }
 
-		#canvas {
-			position: absolute;
-			top: 0px;
-			left: 70px;
-		}
+        #canvas {
+            position: absolute;
+            top: 0px;
+            left: 70px;
+        }
 
-		#threejsDiv {
-			background-color : transparent;
-			background-color: rgba(255, 255, 255, 0.0);
-			width: 800px;
-			height: 800px;
-			border: 0px solid black;
-			margin: 0px;
-			padding: 0px;
-			position: absolute;
-			top: 0px;
-			left: 0px; 
-		}
+        #threejsDiv {
+            background-color : transparent;
+            background-color: rgba(255, 255, 255, 0.0);
+            width: 800px;
+            height: 800px;
+            border: 0px solid black;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            top: 0px;
+            left: 0px; 
+        }
 
-	</style>
+    </style>
 
 
 </head>
@@ -63,23 +63,28 @@
 <body>
 
 
-	<div id="controls"> </div>
+    <div id="controls"> </div>
 
-	<canvas id="canvas"></canvas>
-	<div id="threejsDiv"></div>
+    <canvas id="canvas"></canvas>
+    <div id="threejsDiv"></div>
 
-	<div style="position: absolute; top: 20px; left: 10px; z-index: 1; font-size: 13px; color: #f6d5c2;">
-		<span style="font-size:15px; color: #f6f5f2;">Saturn Ring Color Pixel Sonification.</span></br>
-		</br>
-		ThreeJS</br></br>
-		Image Data : </br>
-		NASA Cassini Gallery, </br>
-		http://www.astroblend.com/</br></br>
-		Web Audio Google Granular Synth : </br><a href="https://github.com/GoogleChrome/web-audio-samples" style="color: #f3a6b0; text-decoration: none;" target="_blank">https://github.com/GoogleChrome/web-audio-samples</a>
-	</div>
+    <div style="position: absolute; top: 20px; left: 10px; z-index: 1; font-size: 13px; color: #f6d5c2;">
+        <span style="font-size:15px; color: #f6f5f2;">Saturn Ring Color Pixel Sonification.</br>
+        (recommended "Google Chrome")</span></br>
+    </br></br>
+    <a href="https://github.com/jeonghopark/saturnRingSonification" style="color: #f3a6b0; text-decoration: none;" target="_blank">
+        https://github.com/jeonghopark/saturnRingSonification
+    </a>
+    </br></br>
+    ThreeJS</br></br>
+    Image Data : </br>
+    NASA Cassini Gallery, </br>
+    http://www.astroblend.com/</br></br>
+    Web Audio Google Granular Synth : </br><a href="https://github.com/GoogleChrome/web-audio-samples" style="color: #f3a6b0; text-decoration: none;" target="_blank">https://github.com/GoogleChrome/web-audio-samples</a>
+    </div>
 
 
-	<script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 
 
