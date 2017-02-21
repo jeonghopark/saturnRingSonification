@@ -152,7 +152,7 @@ function init() {
 
     var geometryStar = new THREE.SphereGeometry(4000, 32, 32);
     var texloaderStar = new THREE.TextureLoader();
-    var starTexture = texloaderStar.load("images/galaxydisk_s.png");
+    var starTexture = texloaderStar.load("images/galaxydisk_s.jpg");
     var materialStar = new THREE.MeshBasicMaterial({
         color: 0x444444,
         map: starTexture,
