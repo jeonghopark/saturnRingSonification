@@ -33,7 +33,7 @@
 
 
 // Temporary patch until all browsers support unprefixed context.
-// window.AudioContext = window.AudioContext || window.webkitAudioContext;
+window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
 // init() once the page has finished loading.
 window.onload = initAudio;
